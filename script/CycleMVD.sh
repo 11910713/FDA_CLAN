@@ -1,0 +1,56 @@
+/data/liuhaofeng/miniconda3/envs/python3.6/bin/python /data/liuhaofeng/oumingyang/eye_cataract/2023Fall/train.py \
+--dataroot /data/liuhaofeng/oumingyang/eye_cataract/dataset/CADIS-2/ \
+--targetroot /data/liuhaofeng/oumingyang/eye_cataract/dataset/cataract-1/ \
+--name CADIS-2_cataract-1_CycleMVD_221018_damping \
+--model CycleMVD \
+--netG2m unet_seg \
+--netG2i unet_seg \
+--netDm basic \
+--netDi basic \
+--dataset_mode da \
+--load_size 480 \
+--crop_size 200 \
+--preprocess scale_width \
+--output_nc 17 \
+--batch_size 1 \
+--lambda_dis 0.01 \
+--lambda_adv 0.001 \
+--lambda_CE 1 \
+--lambda_con 0.1 \
+--lr_G2m 0.00025 \
+--lr_G2i 0.0002 \
+--D_lr 0.0001 \
+--n_epochs 5 \
+--n_epochs_decay 130 \
+--display_freq 20 \
+--display_port 8090 \
+--gpu_ids 7
+
+
+/data/liuhaofeng/miniconda3/envs/python3.6/bin/python /data/liuhaofeng/oumingyang/eye_cataract/2023Fall/train.py \
+--dataroot /data/liuhaofeng/oumingyang/eye_cataract/dataset/CADIS-2/ \
+--targetroot /data/liuhaofeng/oumingyang/eye_cataract/dataset/cataract-1/ \
+--name CADIS-2_cataract-1_CycleMVDv2_221016 \
+--model CycleMVDv2 \
+--netG2m unet_seg \
+--netG2i unet_seg \
+--netDm u2d \
+--netDi basic \
+--dataset_mode da \
+--load_size 480 \
+--crop_size 200 \
+--preprocess scale_width \
+--output_nc 17 \
+--batch_size 1 \
+--lambda_dis 0.01 \
+--lambda_adv 0.001 \
+--lambda_CE 1 \
+--lambda_con 0.1 \
+--lr_G2m 0.00025 \
+--lr_G2i 0.0002 \
+--D_lr 0.0001 \
+--n_epochs 5 \
+--n_epochs_decay 130 \
+--display_freq 20 \
+--display_port 8090 \
+--gpu_ids 7

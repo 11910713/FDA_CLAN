@@ -1,0 +1,49 @@
+----------------- Options ---------------
+                     D_lr: 0.002                         
+                        L: 0.005                         
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: ./checkpoints                 
+                crop_size: 200                           	[default: 256]
+                 dataroot: /data/liuhaofeng/oumingyang/eye_cataract/dataset/CADIS-2/	[default: None]
+             dataset_mode: da                            	[default: unaligned]
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: 15                            	[default: latest]
+                     eval: False                         
+                 gan_mode: vanilla                       
+                  gpu_ids: 7                             	[default: 0]
+              high_freq_r: 5                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+                lambda_CE: 1.0                           
+               lambda_GAN: 1.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 480                           	[default: 256]
+         max_dataset_size: inf                           
+                    model: fcninthewild                  	[default: test]
+               n_layers_D: 3                             
+                     name: CADIS_FCN_in_the_wild_220531  	[default: experiment_name]
+                      ndf: 64                            
+                     netD: fcninthewild                  	[default: basic]
+                     netG: unet_seg                      	[default: resnet_9blocks]
+                      nfc: 512                           
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                     norm: instance                      
+                 num_test: 330                           	[default: 50]
+              num_threads: 4                             
+                output_nc: 36                            	[default: 3]
+                    phase: test                          
+                pool_size: 0                             
+               preprocess: scale_width                   	[default: resize_and_crop]
+              results_dir: /data/liuhaofeng/oumingyang/exp_results/2022Spring	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+               targetroot: /data/liuhaofeng/oumingyang/eye_cataract/dataset/cataract-1/	[default: None]
+                use_wandb: False                         
+                  verbose: False                         
+----------------- End -------------------
